@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result-container {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <h3>1. What is the capital of France?</h3>
+                <input type="radio" name="q1" value="Paris"> Paris<br>
+                <input type="radio" name="q1" value="London"> London<br>
+                <input type="radio" name="q1" value="Berlin"> Berlin<br>
+            </div>
+            <div class="question">
+                <h3>2. Which planet is known as the Red Planet?</h3>
+                <input type="radio" name="q2" value="Mars"> Mars<br>
+                <input type="radio" name="q2" value="Venus"> Venus<br>
+                <input type="radio" name="q2" value="Earth"> Earth<br>
+            </div>
+            <div class="question">
+                <h3>3. What is the largest mammal?</h3>
+                <input type="radio" name="q3" value="Elephant"> Elephant<br>
+                <input type="radio" name="q3" value="Giraffe"> Giraffe<br>
+                <input type="radio" name="q3" value="Blue Whale"> Blue Whale<br>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <div class="container" id="result-container">
+        <h2>Quiz Result</h2>
+        <p id="score">Score: <span id="score-value">0</span></p>
+        <button id="return-home">Return to Home Page</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

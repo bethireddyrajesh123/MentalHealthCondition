@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate via PhonePe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .qr-code {
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .donation-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #0074CC;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0058A6;
+        }
+
+        .or {
+            font-size: 24px;
+        }
+
+        .par {
+            font-size: 18px;
+        }
+
+        .other-options {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="qr-code" src="https://i.pinimg.com/564x/13/be/1c/13be1c09d0b6f76f00f69bb5053af3df.jpg" alt="PhonePe QR Code">
+        <div class="or">Or</div>
+        <div class="par">Other options of Donations</div>
+        <div class="donation-form">
+            <h1>Make a Donation</h1>
+            <p>Scan the PhonePe QR code to make a donation.</p>
+            <input type="text" placeholder="Enter the donation amount">
+            <button>Donate</button>
+        </div>
+    </div>
+</body>
+</html>

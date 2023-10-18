@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizz1.css">
+    <title>Mental Health Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color:transparent;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result-container {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <h3>1. What is self-care and why is it important for mental health?</h3>
+                <input type="radio" name="q1" value="Self-care is taking time for oneself to maintain and improve mental well-being"> Self-care is taking time for oneself to maintain and improve mental well-being<br>
+                <input type="radio" name="q1" value="Self-care is a waste of time"> Self-care is a waste of time<br>
+                <input type="radio" name="q1" value="Self-care is only for certain people"> Self-care is only for certain people<br>
+            </div>
+            <div class="question">
+                <h3>2. How can you reduce stress in your daily life?</h3>
+                <input type="radio" name="q2" value="Practice relaxation techniques such as deep breathing and meditation"> Practice relaxation techniques such as deep breathing and meditation<br>
+                <input type="radio" name="q2" value="Ignore stress and it will go away"> Ignore stress and it will go away<br>
+                <input type="radio" name="q2" value="Increase caffeine intake"> Increase caffeine intake<br>
+            </div>
+            <div class="question">
+                <h3>3. What are the benefits of seeking professional help for mental health issues?</h3>
+                <input type="radio" name="q3" value="Access to expert guidance and support"> Access to expert guidance and support<br>
+                <input type="radio" name="q3" value="Professional help is expensive and ineffective"> Professional help is expensive and ineffective<br>
+                <input type="radio" name="q3" value="Mental health issues can't be treated"> Mental health issues can't be treated<br>
+            </div>
+            <div class="question">
+                <h3>4. What is the importance of maintaining a healthy work-life balance for your mental health?</h3>
+                <input type="radio" name="q4" value="It helps prevent burnout and reduces stress"> It helps prevent burnout and reduces stress<br>
+                <input type="radio" name="q4" value="Work is more important than personal life"> Work is more important than personal life<br>
+                <input type="radio" name="q4" value="Work-life balance is a myth"> Work-life balance is a myth<br>
+            </div>
+            <div class="question">
+                <h3>5. How can you support a friend or family member who is struggling with their mental health?</h3>
+                <input type="radio" name="q5" value="Listen, offer empathy, and encourage them to seek professional help"> Listen, offer empathy, and encourage them to seek professional help<br>
+                <input type="radio" name="q5" value="Tell them to toughen up and deal with it"> Tell them to toughen up and deal with it<br>
+                <input type="radio" name="q5" value="Ignore their issues"> Ignore their issues<br>
+            </div>
+            <div class="question">
+                <h3>6. What are some common signs of anxiety, and how can it be managed?</h3>
+                <input type="radio" name="q6" value="Common signs include restlessness, excessive worry, and difficulty concentrating. It can be managed through therapy, relaxation techniques, and medication if needed"> Common signs include restlessness, excessive worry, and difficulty concentrating. It can be managed through therapy, relaxation techniques, and medication if needed<br>
+                <input type="radio" name="q6" value="Anxiety is not a real issue"> Anxiety is not a real issue<br>
+                <input type="radio" name="q6" value="Ignore anxiety; it will go away"> Ignore anxiety; it will go away<br>
+            </div>
+            
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <div class="container" id="result-container">
+        <h2>Quiz Result</h2>
+        <p id="score">Score: <span id="score-value">0</span></p>
+        <button id="return-home">Return to Home Page</button>
+    </div>
+    <script src="quizz2.js"></script>
+</body>
+</html>
